@@ -1,42 +1,168 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+body{
+  display: fiex;
+  flex-direction: column;
+  background-color: #0a0a0c;
+}
+*{
+  color: rgb(140, 224, 80);
+}
+.mbappe p{
+  color: bisque;
+  margin-right: 800px;
+  background-color: black;
+ font-size: 20px;
+ padding: 20px;
+ margin-top: 30px;
+
+}
+.map-bt{
+  background-color: transparent;
+  color: white;
+}
+.rl9 p{
+  /* margin-top: 2px; Adjust margin as needed */
+  margin-left: 1100px; /* Adjust margin as needed */
+  margin-right: 20px;
+  padding: 50px;
+  
+  color: rgb(13, 61, 57);
+  background-color: rgb(219, 213, 44);
+}
+
+#root{
+  width: 100%;
+}
+
+img {
+  width: 100vw; /* Set width to 100% of viewport width */
+  height: 100vh; /* Set height to 100% of viewport height */
+  object-fit: cover; /* Ensure the image covers the entire container */
+}
+
+.siu{
+  margin-top: 2px;
+  background-color: rgb(0, 76, 76);
+  color: rgb(255, 255, 255);
+  width: 70%;
+  font-size: 12px;
   text-align: center;
 }
+.App{
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+}
+.hasDropdown{
+  background-color: transparent;
+  color: white;
+}
+.bins {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap onto new lines */
+ 
+  width: 70%;
+}
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.bin {
+  width: calc(25% - 10px); /* 25% width for each bin with space between them */
+  margin-bottom: 20px; /* Add some bottom margin for spacing */
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+
+.sensor-box{
+  color: rgb(250, 250, 250);
+  background-color: rgb(18, 18, 18);
+  box-shadow: 0px 0px 5px 2px #0ff;
+  
+  width: 150px;
+  height: 200px;
+
+  padding: 10px;
+  margin: 20px;
+ 
+  border: 2px solid black;
+  border-radius: 15px;
+
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+
+}
+.map-btn{
+  background-color: transparent;
+  color: white;
+  margin: 15px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --progress-bar-width: 90px;
+  --progress-bar-height: 90px;
+  --font-size: 15px;
+
+}
+
+body {
+  height: 100vh;
+  background-color: #100c08;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  place-items: center;
+  gap: 2rem;
+}
+.circular-progress {
+  width: var(--progress-bar-width);
+  height: var(--progress-bar-height);
+  border-radius: 50%;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+}
+.inner-circle {
+ 
+ 
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: calc(var(--progress-bar-width) - 30px);
+  height: calc(var(--progress-bar-height) - 30px);
+  border-radius: 50%;
+  top: 10px;
+  background-color: rgb(3, 50, 121);
+}
+.inner-circle p{
+  align-self: center;
+  text-align: center;
+  justify-content: center;
+  
+}
+.percentage {
+  font-size: var(--font-size);
+  color: rgb(255, 255, 255);
+  top: 70px;
+}
+
+@media screen and (max-width: 800px) {
+  :root {
+    --progress-bar-width: 150px;
+    --progress-bar-height: 150px;
+    --font-size: 1.3rem;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media screen and (max-width: 500px) {
+  :root {
+    --progress-bar-width: 120px;
+    --progress-bar-height: 120px;
+    --font-size: 1rem;
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
